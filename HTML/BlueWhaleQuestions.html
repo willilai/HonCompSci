@@ -27,6 +27,18 @@
         color:rgb(51, 175, 255);
         font-family:courtier;
       }
+
+    div
+      {
+        display:inline-block;
+        margin:10px;
+      }
+
+    button
+      {
+        color:rgb(51, 175, 255);
+        background-color: navy;
+      }
   </style>
 
 </head>
@@ -38,7 +50,114 @@
     </em></strong>
   </h1>
 
-  
+  <div class="textColor">
+    <p>
+      What is the average length of a blue whale?
+    </p>
+
+    <button class="wrong" onclick="wrongFunction()">
+      16m
+    </button>
+
+    <button class="wrong" onclick="wrongFunction()">
+      27m
+    </button>
+
+    <button class="correct" onclick="correctFunction()">
+      30m
+    </button>
+
+    <button class="wrong" onclick="wrongFunction()">
+      50m
+    </button>
+  </div>
+
+  <div class="textColor">
+    <p>
+      What is the average weight of a blue whale?
+    </p>
+
+    <button class="wrong" onclick="wrongFunction()">
+      97 tons
+    </button>
+
+    <button class="wrong" onclick="wrongFunction()">
+      130 tons
+    </button>
+
+    <button class="wrong" onclick="wrongFunction()">
+      156 tons
+    </button>
+
+    <button class="correct" onclick="correctFunction()">
+      173 tons
+    </button>
+  </div>
+
+  <div class="textColor">
+    <p>
+      What is the species of whale that has the longest average length?
+    </p>
+
+    <button class="wrong" onclick="wrongFunction()">
+      Humpback Whale
+    </button>
+
+    <button class="wrong" onclick="wrongFunction()">
+      Sperm Whale
+    </button>
+
+    <button class="wrong" onclick="wrongFunction()">
+      Fin Whale
+    </button>
+
+    <button class="correct" onclick="correctFunction()">
+      Blue Whale
+    </button>
+  </div>
+
+  <div class="textColor">
+    <p>
+      What do blue whales mainly eat?
+    </p>
+
+    <button class="wrong" onclick="wrongFunction()">
+      Fish
+    </button>
+
+    <button class="correct" onclick="correctFunction()">
+      Krill
+    </button>
+
+    <button class="wrong" onclick="wrongFunction()">
+      Other Whales
+    </button>
+
+    <button class="wrong" onclick="wrongFunction()">
+      Sharks
+    </button>
+  </div>
+
+  <script>
+  function correctFunction()
+    {
+      var x = document.getElementsByClassName("correct");
+      for (var i = 0; i < x.length; i++)
+        {
+          x[i].style.backgroundcolor = "green";
+        }
+    }
+  function wrongFunction()
+    {
+      var y = document.getElementsByClassName("wrong");
+      for (var i = 0; i < y.length; i++)
+        {
+          x[i].style.backgroundcolor = "red"
+        }
+    }
+  </script>
+
+
 
 </body>
 </html>

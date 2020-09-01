@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>
+    All about Blue Whales
+  </title>
+
+  <meta charset="UTF-8">
+
+  <style>
+    body
+      {
+        background-image: url('blue_whale.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+
+    h1
+      {
+        text-align:center;
+        font-size:300%;
+      }
+
+    .textColor
+      {
+        color:rgb(51, 175, 255);
+        font-family:courtier;
+
+      }
+
+    p
+      {
+        margin:20px;
+      }
+
+    a:link, a:visited
+      {
+        background-color:navy;
+        padding: 15px 25px;
+        margin:20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        float:right;
+      }
+
+  a:hover, a:active
+    {
+      background-color: lightblue;
+    }
+
+  div
+    {
+      display:inline-block;
+      margin:30px;
+    }
+
+  table, th, td
+    {
+      width:200px;
+      margin: 20px;
+      border-collapse: collapse;
+      border: 1px solid rgb(51, 175, 255);;
+      padding:5px;
+    }
+
+  iframe
+    {
+      width:600px;
+      height:400px;
+    }
+
+    button
+      {
+        background-color: navy;
+        width:260px;
+        height:50px;
+      }
+
+    #p
+      {
+        display:none;
+      }
+
+      img
+        {
+          width:220px;
+          height:220px;
+        }
+  </style>
+</head>
+
+<body>
+
+  <h1 class="textColor">
+    <strong><em>
+      Blue Whales
+    </em></strong>
+  </h1>
+
+  <p class="textColor">
+    <a class="textColor" href="https://www.youtube.com/watch?v=1OXPwOiLHRA" target="_blank">
+      Click the button to watch all about blue whales.
+    </a>
+
+    A blue whale is a majestic beast. This webiste will tell you all about it.
+
+    <dl class="textColor" >
+      <dt>
+        Blue Whales
+      </dt>
+      <dd>
+          - are about 30m long
+      </dd>
+      <dd>
+          - weigh about 173 tons
+      </dd>
+      <dd>
+          - numbers between &#60; 8100 and &#62; 2850
+      </dd>
+    </dl>
+  </p>
+
+  <div>
+    <table class="textColor">
+
+      <caption class="textColor" >
+        Whale Size Comparison
+      </caption>
+
+      <tr>
+        <th>
+          Placement
+        </th>
+        <th>
+          Species of Whale
+        </th>
+        <th>
+          Average Length
+        </th>
+      </tr>
+
+      <tr>
+        <td>
+          1
+        </td>
+        <td>
+          Blue Whale
+        </td>
+        <td>
+          98ft / 30m
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          2
+        </td>
+        <td>
+          Fin Whale
+        </td>
+        <td>
+          90ft / 27.5m
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          3
+        </td>
+        <td>
+          Sperm Whale
+        </td>
+        <td>
+          67ft / 20.5m
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          4
+        </td>
+        <td>
+          Right Whale
+        </td>
+        <td>
+          60ft / 18m
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          5
+        </td>
+        <td>
+          Bowhead Whale
+        </td>
+        <td>
+          59ft / 18m
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          6
+        </td>
+        <td>
+          Humpback Whale
+        </td>
+        <td>
+          52ft / 16m
+        </td>
+      </tr>
+
+    </table>
+  </div>
+
+  <div>
+    <iframe src="https://en.wikipedia.org/wiki/Blue_whale">
+    </iframe>
+  </div>
+
+  <div class="textColor">
+    <p class="whalefood" id="p">
+      Blue Whales eat krill.
+      <br />
+      <img src="krill.jpg" alt="Krill">
+    </p>
+
+    <button class="textColor" onclick="myFunction()">
+      Click to show/hide what Blue Whales eat
+    </button>
+
+    <script>
+    function myFunction()
+      {
+        var x = document.getElementsByClassName("whalefood");
+        for (var i = 0; i < x.length; i++)
+          {
+            if (x[i].style.display == "none")
+              {
+                x[i].style.display = "block";
+              }
+            else
+              {
+                x[i].style.display = "none";
+              }
+          }
+      }
+    </script>
+  </div>
+
+</body>
+</html>

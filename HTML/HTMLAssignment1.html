@@ -1,12 +1,15 @@
 <!DOCTYPE HTML>
-<html>
+<html lang = "en-US">
 <head>
+  <!-- sets the title of the website -->
   <title>
     All about Blue Whales
   </title>
 
+  <!-- sets the character set to UTF-8 -->
   <meta charset="UTF-8">
 
+  <!-- sets the style for all tags, classes, and ids -->
   <style>
     body
       {
@@ -26,7 +29,6 @@
       {
         color:rgb(51, 175, 255);
         font-family:courtier;
-
       }
 
     p
@@ -42,12 +44,16 @@
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        float:right;
       }
 
   a:hover, a:active
     {
       background-color: lightblue;
+    }
+
+  dt
+    {
+      font-size:150%;
     }
 
   div
@@ -71,28 +77,28 @@
       height:400px;
     }
 
-    button
-      {
-        background-color: navy;
-        width:260px;
-        height:50px;
-      }
+  button
+    {
+      background-color: navy;
+      width:260px;
+      height:50px;
+    }
 
-    #p
-      {
-        display:none;
-      }
+  #p
+    {
+      display:none;
+    }
 
-      img
-        {
-          width:220px;
-          height:220px;
-        }
+    img
+      {
+        width:220px;
+        height:220px;
+      }
   </style>
 </head>
 
 <body>
-
+  <!-- creates the heading of the website -->
   <h1 class="textColor">
     <strong><em>
       Blue Whales
@@ -100,36 +106,64 @@
   </h1>
 
   <p class="textColor">
-    <a class="textColor" href="https://www.youtube.com/watch?v=1OXPwOiLHRA" target="_blank">
+    <!-- a link to watch a video on blue whales -->
+    <a class="textColor" href="https://www.youtube.com/watch?v=1OXPwOiLHRA" target="_blank" style="float:right">
       Click the button to watch all about blue whales.
     </a>
 
+    <!-- gives a description about what the webiste is all about -->
     A blue whale is a majestic beast. This webiste will tell you all about it.
 
+    <!-- displays a list of facts on blue whales -->
     <dl class="textColor" >
       <dt>
         Blue Whales
       </dt>
-      <dd>
-          - are about 30m long
-      </dd>
-      <dd>
-          - weigh about 173 tons
-      </dd>
-      <dd>
-          - numbers between &#60; 8100 and &#62; 2850
-      </dd>
+      <ol>
+        <li>
+            are endangered
+        </li>
+        <li>
+            are on average about 30m long
+        </li>
+        <li>
+            weigh on average about 173 tons
+        </li>
+        <li>
+            number &#60; 8100 and &#62; 2850
+        </li>
+      </ol>
     </dl>
 
+    <!-- displays an unordered list that lets users know how they can help save blue whales -->
+    <div>
+      <dl class="textColor">
+        <dt>
+          What you can do to help save blue whales
+        </dt>
+        <dd>
+          - learn more about them. If you learn more, you will know more key <br />
+          aspects about their survival. Once you know more, you know what is <br />
+          the best way to help save them.
+        </dd>
+        <dd>
+          - limit your carbon emissions. higher temperature makes their food <br />
+          go toward the poles, making the whales traveling farther, limiting <br />
+          the amount of food they will eat. The less food they eat, the harder <br />
+          it is to survive the winter months.
+        </dd>
+      </dl>
+    </div>
+
+    <!-- links to a questionnaire on facts from the website -->
     <a class="textColor" href="BlueWhaleQuestions.html" target="_blank">
       Click here to play a questionnaire
     </a>
-
   </p>
 
   <div>
+    <!-- creates a table comparing the size of blue whales to other species -->
     <table class="textColor">
-
       <caption class="textColor" >
         Whale Size Comparison
       </caption>
@@ -222,21 +256,25 @@
   </div>
 
   <div>
+    <!-- displays a website in this website that talks about blue whales -->
     <iframe src="https://en.wikipedia.org/wiki/Blue_whale">
     </iframe>
   </div>
 
   <div class="textColor">
+    <!-- displays what blue whales eat -->
     <p class="whalefood" id="p">
-      Blue Whales eat krill.
+      Blue Whales mainly eat krill.
       <br />
       <img src="krill.jpg" alt="Krill">
     </p>
 
+    <!-- allows the user to clikc here to know what whales eat -->
     <button class="textColor" onclick="myFunction()">
       Click to show/hide what Blue Whales eat
     </button>
 
+    <!-- if the user clicks the button, then the image and text on whale food appears -->
     <script>
     function myFunction()
       {

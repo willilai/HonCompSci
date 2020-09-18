@@ -10,91 +10,8 @@
   <meta charset="UTF-8">
 
   <!-- sets the style for all tags, classes, and ids -->
-  <style>
-    body
-      {
-        background-image: url('blue_whale.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-      }
+  <link rel="stylesheet" href="styles.css">
 
-    h1
-      {
-        text-align:center;
-        font-size:300%;
-      }
-
-    .textColor
-      {
-        color:rgb(51, 175, 255);
-        font-family:courtier;
-      }
-
-    p
-      {
-        margin:20px;
-      }
-
-    a:link, a:visited
-      {
-        background-color:navy;
-        padding: 15px 25px;
-        margin:20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-      }
-
-  a:hover, a:active
-    {
-      background-color: lightblue;
-    }
-
-  dt
-    {
-      font-size:150%;
-    }
-
-  div
-    {
-      display:inline-block;
-      margin:30px;
-    }
-
-  table, th, td
-    {
-      width:200px;
-      margin: 20px;
-      border-collapse: collapse;
-      border: 1px solid rgb(51, 175, 255);;
-      padding:5px;
-    }
-
-  iframe
-    {
-      width:600px;
-      height:400px;
-    }
-
-  button
-    {
-      background-color: navy;
-      width:260px;
-      height:50px;
-    }
-
-  #p
-    {
-      display:none;
-    }
-
-    img
-      {
-        width:220px;
-        height:220px;
-      }
-  </style>
 </head>
 
 <body>
@@ -137,7 +54,7 @@
 
     <!-- displays an unordered list that lets users know how they can help save blue whales -->
     <div>
-      <dl class="textColor">
+      <dl class="textColor" id="border">
         <dt>
           What you can do to help save blue whales
         </dt>

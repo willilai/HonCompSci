@@ -4,4 +4,5 @@ This program creates a website that has information about blue whales. It has a 
 
 My advanced HTML aspect is the Questionnaire. I used JavaScript to change the color of the button when the user clicks the correct one and if they click the wrong one. 
 
-The commit with my final code is: 54b5abdfa7bfae1df2b483db2d7ddaa5b7aa1dc0
+The commit with my final HTML is: 54b5abdfa7bfae1df2b483db2d7ddaa5b7aa1dc0. 
+The commit with my final CSS is: 76ca14e. 

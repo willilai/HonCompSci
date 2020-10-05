@@ -7,207 +7,223 @@
   </title>
 
   <!-- sets the character set to UTF-8 -->
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  <!-- sets the style for all tags, classes, and ids -->
-  <link rel="stylesheet" href="styles.css">
-
+  <style>
+    .row
+      {
+        margin: 2em;
+      }
+  </style>
 </head>
 
-<body>
-  <!-- creates the heading of the website -->
-  <h1 class="textColor">
-    Blue Whales
-  </h1>
+<body class="bg-warning">
+  <nav class="navbar navbar-expand-sm bg-primary navbar-dark justify-content-center fixed-top">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">Navbar</a>
 
-  <p class="textColor">
-    <!-- a link to watch a video on blue whales -->
-    <a class="textColor" href="https://www.youtube.com/watch?v=1OXPwOiLHRA" target="_blank" style="float:right">
-      Click the button to watch all about blue whales.
-    </a>
-
-    <!-- gives a description about what the webiste is all about -->
-    A blue whale is a majestic beast. This webiste will tell you all about it.
-
-    <!-- displays a list of facts on blue whales -->
-    <dl class="textColor" >
-      <dt>
-        Blue Whales
-      </dt>
-      <ol>
-        <li>
-            are endangered
-        </li>
-        <li>
-            are on average about 30m long
-        </li>
-        <li>
-            weigh on average about 173 tons
-        </li>
-        <li>
-            number &#60; 8100 and &#62; 2850
-        </li>
-      </ol>
-    </dl>
-
-    <!-- displays an unordered list that lets users know how they can help save blue whales -->
-    <div>
-      <dl class="textColor" id="border">
-        <dt>
-          What you can do to help save blue whales
-        </dt>
-        <dd>
-          - learn more about them. If you learn more, you will know more key <br />
-          aspects about their survival. Once you know more, you know what is <br />
-          the best way to help save them.
-        </dd>
-        <dd>
-          - limit your carbon emissions. higher temperature makes their food <br />
-          go toward the poles, making the whales traveling farther, limiting <br />
-          the amount of food they will eat. The less food they eat, the harder <br />
-          it is to survive the winter months.
-        </dd>
-      </dl>
-    </div>
-
-    <!-- links to a questionnaire on facts from the website -->
-    <a class="textColor" href="BlueWhaleQuestions.html" target="_blank">
-      Click here to play a questionnaire
-    </a>
-  </p>
-
-  <div>
-    <!-- creates a table comparing the size of blue whales to other species -->
-    <table class="textColor">
-      <caption class="textColor" >
-        Whale Size Comparison
-      </caption>
-
-      <tr>
-        <th>
-          Placement
-        </th>
-        <th>
-          Species of Whale
-        </th>
-        <th>
-          Average Length
-        </th>
-      </tr>
-
-      <tr>
-        <td>
-          1
-        </td>
-        <td>
-          Blue Whale
-        </td>
-        <td>
-          98ft / 30m
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          2
-        </td>
-        <td>
-          Fin Whale
-        </td>
-        <td>
-          90ft / 27.5m
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          3
-        </td>
-        <td>
-          Sperm Whale
-        </td>
-        <td>
-          67ft / 20.5m
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          4
-        </td>
-        <td>
-          Right Whale
-        </td>
-        <td>
-          60ft / 18m
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          5
-        </td>
-        <td>
-          Bowhead Whale
-        </td>
-        <td>
-          59ft / 18m
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          6
-        </td>
-        <td>
-          Humpback Whale
-        </td>
-        <td>
-          52ft / 16m
-        </td>
-      </tr>
-
-    </table>
-  </div>
-
-  <div>
-    <!-- displays a website in this website that talks about blue whales -->
-    <iframe src="https://en.wikipedia.org/wiki/Blue_whale">
-    </iframe>
-  </div>
-
-  <div class="textColor">
-    <!-- displays what blue whales eat -->
-    <p class="whalefood" id="p">
-      Blue Whales mainly eat krill.
-      <br />
-      <img src="krill.jpg" alt="Krill">
-    </p>
-
-    <!-- allows the user to clikc here to know what whales eat -->
-    <button class="textColor" onclick="myFunction()">
-      Click to show/hide what Blue Whales eat
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon">
+      </span>
     </button>
 
-    <!-- if the user clicks the button, then the image and text on whale food appears -->
-    <script>
-    function myFunction()
-      {
-        var x = document.getElementsByClassName("whalefood");
-        for (var i = 0; i < x.length; i++)
-          {
-            if (x[i].style.display == "none")
-              {
-                x[i].style.display = "block";
-              }
-            else
-              {
-                x[i].style.display = "none";
-              }
-          }
-      }
-    </script>
-  </div>
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/watch?v=1OXPwOiLHRA">
+            Click here to watch all about blue whales.
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="BlueWhaleQuestions.html">
+            Click here to play a questionnaire
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <br>
 
+  <div class="container">
+    <!-- creates the heading of the website -->
+    <div class="row">
+      <div class="col">
+        <h1 class="display-1 font-weight-bold font-italic">
+          Blue Whales
+        </h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-4">
+        <!-- gives a description about what the webiste is all about -->
+        A blue whale is a majestic beast. <br />
+        This webiste will tell you all about it.
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <!-- displays a list of facts on blue whales -->
+        <dl>
+          <dt>
+            Blue Whales
+          </dt>
+          <ol>
+            <li>
+                are endangered
+            </li>
+            <li>
+                are on average about 30m long
+            </li>
+            <li>
+                weigh on average about 173 tons
+            </li>
+            <li>
+                number &#60; 8100 and &#62; 2850
+            </li>
+          </ol>
+        </dl>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4 card bg-info text-white">
+        <div class="card-body">
+          <!-- displays an unordered list that lets users know how they can help save blue whales -->
+          <dl>
+            <dt>
+              What you can do to help save blue whales
+            </dt>
+            <dd>
+              - learn more about them. If you learn more, you will know more key
+              aspects about their survival. Once you know more, you know what is
+              the best way to help save them.
+            </dd>
+            <dd>
+              - limit your carbon emissions. higher temperature makes their food
+              go toward the poles, making the whales traveling farther, limiting
+              the amount of food they will eat. The less food they eat, the harder
+              it is to survive the winter months.
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-4">
+        <!-- creates a table comparing the size of blue whales to other species -->
+        <table class="table table-striped">
+          <thread class = "thead-light">
+            <tr>
+              <th>
+                Placement
+              </th>
+              <th>
+                Species of Whale
+              </th>
+              <th>
+                Average Length
+              </th>
+            </tr>
+          </thread>
+          <tr>
+            <td>
+              1
+            </td>
+            <td>
+              Blue Whale
+            </td>
+            <td>
+              98ft / 30m
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              2
+            </td>
+            <td>
+              Fin Whale
+            </td>
+            <td>
+              90ft / 27.5m
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              3
+            </td>
+            <td>
+              Sperm Whale
+            </td>
+            <td>
+              67ft / 20.5m
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              4
+            </td>
+            <td>
+              Right Whale
+            </td>
+            <td>
+              60ft / 18m
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              5
+            </td>
+            <td>
+              Bowhead Whale
+            </td>
+            <td>
+              59ft / 18m
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              6
+            </td>
+            <td>
+              Humpback Whale
+            </td>
+            <td>
+              52ft / 16m
+            </td>
+          </tr>
+
+        </table>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <!-- displays a website in this website that talks about blue whales -->
+        <iframe src="https://en.wikipedia.org/wiki/Blue_whale">
+        </iframe>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">
+          Click to show/hide what Blue Whales eat
+        </button>
+
+        <!-- displays what blue whales eat -->
+        <div id="demo" class="collapse">
+          Blue Whales mainly eat krill.
+          <br />
+          <img src="krill.jpg" class="rounded-circle img-fluid" alt="Krill">
+        </div>
+      </div>
+  </div>
 </body>
 </html>

@@ -11,4 +11,6 @@ The commit with my final CSS is: 817ceb5
 The commit with my final Bootstrap 4 is: 3cf0e77
 The nav bar is supposed to be a dropdown but it doesn't work eventhough I mirrored the code from the tutorial. I don't know why it doesn't work. 
 
+The commit with my draft of the website is: 5404a64e0f28c7c2f5880be65911b64673439a67
+
 . 

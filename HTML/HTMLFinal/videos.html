@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+  <title>
+    Videos
+  </title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="Final.css">
+</head>
+
+<body>
+  <!-- creates a navbar -->
+  <nav class="navbar navbar-expand-sm bg-primary">
+    <!-- the logo part of the navebar -->
+    <a class="navbar-brand" href="homePage.html">
+      <img src="blue_whale_logo.jpg" alt="Logo"id="logo">
+    </a>
+
+    <!-- holds the links to the four different pages -->
+    <ul class="navbar-nav">
+      <!-- link to the info pagee -->
+      <li class="nav-item">
+        <a class="nav-link textColor" href="information.html">
+          Information on Blue Whales
+        </a>
+      </li>
+      <!-- link to the video page -->
+      <li class="nav-item">
+        <a class="nav-link textColor" href="videos.html">
+          Videos
+        </a>
+      </li>
+      <!-- link to the grames page -->
+      <li class="nav-item">
+        <a class="nav-link textColor" href="games.html">
+          Games
+        </a>
+      </li>
+      <!-- link to the donate page -->
+      <li class="nav-item">
+        <button type="button" class="btn btn-warning btn-sm">
+          <a class="nav-link textColor" id="donate" href="donate.html">
+            Donate to save Blue Wahles
+          </a>
+        </button>
+      </li>
+    </ul>
+  </nav>
+  <br>
+
+  <div class="container">
+    <!-- displays the title of the page -->
+    <div class="row">
+      <div class="col-8">
+        <h1 class="display-1 textColor">
+          Videos
+        </h1>
+      </div>
+      <br />
+    </div>
+
+  <div class="row d-flex justify-content-lg-around flex-lg-nowrap">
+    <!-- displays a card for the first video -->
+    <div class="card bg-info cardColor" >
+        <div class="card">
+          <img class="card-img-top" src="video1img.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">
+              Blue Whales 101
+            </h4>
+            <!-- link to the video -->
+            <a href="https://www.youtube.com/watch?v=bgiPTUy2RqI" class="btn btn-primary stretched-link" target="_blank">
+              Link to Video
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- displays a card for the second video -->
+      <div class="card bg-info cardColor" >
+        <div class="card">
+          <img class="card-img-top" src="video2img.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">
+              How Large Are Blue Whales Really? Size Comparison
+            </h4>
+            <!-- link to the video -->
+            <a href="https://www.youtube.com/watch?v=qGK6a6_tQEI" class="btn btn-primary stretched-link" target="_blank">
+              Link to Video
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- displays a card for the third video -->
+      <div class="card bg-info cardColor" >
+        <div class="card">
+          <img class="card-img-top" src="video3img.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">
+              Worlds Largest Blue Whale Ever Discovered in Sri Lanka
+            </h4>
+            <!-- link to the video -->
+            <a href="https://www.youtube.com/watch?v=1OXPwOiLHRA" class="btn btn-primary stretched-link" target="_blank">
+              Link to Video
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <!-- a button if clicked leads the user back to the home page -->
+    <div class="row">
+      <button type="button" class="btn btn-primary">
+        <a class="textColor" href="homePage.html">
+          Back to the Home Page
+        </a>
+      </button>
+    </div>
+  </div>
+</body>
+</html>

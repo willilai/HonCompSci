@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+  <title>
+    Information on Blue Whales
+  </title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="Final.css">
+</head>
+
+<body>
+  <!-- creates a navbar -->
+  <nav class="navbar navbar-expand-sm bg-primary">
+    <!-- the logo part of the navebar -->
+    <a class="navbar-brand" href="homePage.html">
+      <img src="blue_whale_logo.jpg" alt="Logo"id="logo">
+    </a>
+
+    <!-- holds the links to the four different pages -->
+    <ul class="navbar-nav">
+      <!-- link to the info pagee -->
+      <li class="nav-item">
+        <a class="nav-link textColor" href="information.html">
+          Information on Blue Whales
+        </a>
+      </li>
+      <!-- link to the video page -->
+      <li class="nav-item">
+        <a class="nav-link textColor" href="videos.html">
+          Videos
+        </a>
+      </li>
+      <!-- link to the grames page -->
+      <li class="nav-item">
+        <a class="nav-link textColor" href="games.html">
+          Games
+        </a>
+      </li>
+      <!-- link to the donate page -->
+      <li class="nav-item">
+        <button type="button" class="btn btn-warning btn-sm">
+          <a class="nav-link textColor" id="donate" href="donate.html">
+            Donate to save Blue Wahles
+          </a>
+        </button>
+      </li>
+    </ul>
+  </nav>
+  <br>
+
+  <!-- Displays the title of the page -->
+  <div class="container">
+    <div class="row">
+      <div class="col-8">
+        <h1 class="display-1 textColor">
+          Information on Blue Whales
+        </h1>
+      </div>
+    </div>
+    <!-- displays the title of the first section -->
+    <div class="row">
+      <h4 class="display-4 textColor">
+        Size and Weight
+      </h4>
+    </div>
+    <!-- if the button is clicked, the information is displayed -->
+    <div>
+      <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">
+        Click to see the size and weight of a blue whale.
+      </button>
+
+      <!-- info(text) -->
+      <div id="demo" class="collapse textColor">
+        <p class="textColor">
+          Blue Whales are the largest animals to live in Earth's history. They can
+          reach a size of 33 meters and on average weight about 100 tons. The size
+          and weight of a blue whale can depend on where they are located. They are
+          mainly located in three areas: Western and Eastern North Pacific and Antartica.
+          The Western North Pacific whales average to be around 92ft long and
+          weigh on average 106 tons. The Eastern North Pacific whales average to be
+          around 72.1ft and weigh on average 94.25 tons. The Antartic whales average
+          to be around 77.1ft and wieght on average 121 tons.
+          <br />
+          <br />
+          Here is a table of 7 of the largest whales compared to each other.
+        </p>
+        <!-- a table comparing the size of a blue whale to other whales -->
+        <table class="col-6 col-sm-4 col-lg-8 table table-striped textColor bg-primary">
+          <thread class = "thead-light">
+            <tr>
+              <th>Placement</th>
+              <th>Species of Whale</th>
+              <th>Average Length</th>
+            </tr>
+          </thread>
+          <tr>
+            <td>1</td>
+            <td>Blue Whale</td>
+            <td>98ft / 30m</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Fin Whale</td>
+            <td>90ft / 27.5m</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Sperm Whale</td>
+            <td>67ft / 20.5m</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Right Whale</td>
+            <td>60ft / 18m</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Bowhead Whale</td>
+            <td>59ft / 18m</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Humpback Whale</td>
+            <td>52ft / 16m</td>
+          </tr>
+        </table>
+    </div>
+    <br />
+
+    <!-- title of the second section -->
+    <div class="row">
+      <h4 class="display-4 textColor">
+        Migration Pattern
+      </h4>
+    </div>
+    <!-- if the button is clicked, the info displays -->
+    <div>
+      <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1">
+        Click to see where blue whales migrate to.
+      </button>
+      <!-- text(info) -->
+      <div id="demo1" class="collapse textColor">
+        <p class="textColor">
+          Blue whales migrate around the world for two purposes: to breed, and to feed.
+          Differnet groups migrate to different areas. In the summer, the Western
+          North Pacific whales migrates to their feeding grounds off of the coasts
+          of Alaska and Canada. In the winter, they migrate to low-latitude waters,
+          including Hawaii. The Eastern North Pacific whales migrates annually to the
+          U.S. West Coast in the summer and fall to feed. In the winter they migrate
+          to their breeding grounds in the Gulf of California and the Eastern Tropical.
+          The Antartic Whales migrate to the Southern Ocean in the summer, and then move
+          into mid- and low-latitude habitats in fall and winter.
+          <br />
+          <br />
+          Here is an image of the migration patterns of blue whales.
+        </p>
+        <!-- a picture of the migration pattern of blue whales -->
+        <img src="migrationPattern.jpg" alt="Migration Pattern" style="width:50%; height:50%;">
+    </div>
+    <br />
+    <!-- the header for the third section -->
+    <div class="row">
+      <h4 class="display-4 textColor">
+        Food
+      </h4>
+    </div>
+    <!-- if the button is clicked, the info is displayed -->
+    <div>
+      <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo2">
+        Click to see what Blue Whales eat
+      </button>
+      <!-- text(info) -->
+      <div id="demo2" class="collapse textColor">
+        A blue whale's diet entirely consists of krill except in certain areas.
+        <br />
+        <!-- displays an image of krill -->
+        <img src="krill.jpg" class="rounded-circle img-fluid" alt="Krill" style="width:20%; height:20%;">
+        <!-- text(info) -->
+        <p class="textColor">
+          A blue whale eats the kril by getting the krill to get into a group.
+          Once the krill are gathered together, the blue whale opens its mouth
+          as wide as it can go (about 90 degrees) to collect as much krill as possible.
+          It swims through the pack, swallowing everything that is in the whale's
+          path. A blue whale has a set of baleen, so the krill get stuck on the
+          baleen allowing the whale to pump out the water and then eating the
+          krill.
+          <br />
+          <br />
+          Here is a picture of a blue whale eating.
+        </p>
+        <!-- displays an image of a blue whale eating krill -->
+        <img src="blue_whale_eating.jpg" alt="Blue Whale Eeating" style="width:50%; height:50%;">
+      </div>
+    </div>
+    <br />
+
+    <!-- a button if clicked leads the user back to the home page -->
+    <div class="row">
+      <button type="button" class="btn btn-primary">
+        <a class="textColor" href="homePage.html">
+          Back to the Home Page
+        </a>
+      </button>
+    </div>
+  </div>
+</body>
+</html>

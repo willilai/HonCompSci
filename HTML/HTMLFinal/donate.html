@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+  <title>
+    Donations
+  </title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="Final.css">
+</head>
+
+<body>
+  <!-- creates a navbar -->
+  <nav class="navbar navbar-expand-sm bg-primary">
+    <!-- the logo part of the navebar -->
+    <a class="navbar-brand" href="homePage.html">
+      <img src="blue_whale_logo.jpg" alt="Logo"id="logo">
+    </a>
+
+    <!-- holds the links to the four different pages -->
+    <ul class="navbar-nav">
+      <!-- link to the info pagee -->
+      <li class="nav-item">
+        <a class="nav-link textColor" href="information.html">
+          Information on Blue Whales
+        </a>
+      </li>
+      <!-- link to the video page -->
+      <li class="nav-item">
+        <a class="nav-link textColor" href="videos.html">
+          Videos
+        </a>
+      </li>
+      <!-- link to the grames page -->
+      <li class="nav-item">
+        <a class="nav-link textColor" href="games.html">
+          Games
+        </a>
+      </li>
+      <!-- link to the donate page -->
+      <li class="nav-item">
+        <button type="button" class="btn btn-warning btn-sm">
+          <a class="nav-link textColor" id="donate" href="donate.html">
+            Donate to save Blue Wahles
+          </a>
+        </button>
+      </li>
+    </ul>
+  </nav>
+  <br>
+
+  <div class="container">
+    <!-- displays the title of the page -->
+    <div class="row">
+      <div class="col-8">
+        <h1 class="display-1 textColor">
+          Donations
+        </h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- displays an iframe that holds the website to donate money to -->
+      <iframe src="https://seashepherd.org/donate/"></iframe>
+    </div>
+
+    <!-- a button if clicked leads the user back to the home page -->
+    <div class="row">
+      <button type="button" class="btn btn-primary">
+        <a class="textColor" href="homePage.html">
+          Back to the Home Page
+        </a>
+      </button>
+    </div>
+  </div>
+  </body>
+  </html>

@@ -7,214 +7,283 @@
   </title>
 
   <!-- sets the character set of the website -->
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  <!-- sets styles for all atags -->
-  <style>
-    body
-      {
-        background-image: url('blue_whale.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-      }
-
-    h1
-      {
-        text-align:center;
-        font-size:300%;
-      }
-
-    .textColor
-      {
-        color:rgb(51, 175, 255);
-        font-family:courtier;
-      }
-
-    div
-      {
-        display:inline-block;
-        margin:10px;
-      }
-
-    button
-      {
-        color:rgb(51, 175, 255);
-        background-color: navy;
-      }
-  </style>
+  <link rel="stylesheet" href="Final.css">
 
 </head>
 <body>
-  <!-- displays the header of the website -->
-  <h1 class="textColor">
-    <strong><em>
-      Blue Whales Questionnaire
-    </em></strong>
-  </h1>
+  <!-- creates a navbar -->
+  <nav class="navbar navbar-expand-sm bg-primary">
+    <!-- the logo part of the navebar -->
+    <a class="navbar-brand" href="homePage.html">
+      <img src="blue_whale_logo.jpg" alt="Logo"id="logo">
+    </a>
 
-  <!-- displays the first questipn -->
-  <div class="textColor">
-    <p>
-      What is the average length of a blue whale?
-    </p>
+    <!-- holds the links to the four different pages -->
+    <ul class="navbar-nav">
+      <!-- link to the info pagee -->
+      <li class="nav-item">
+        <a class="nav-link textColor" href="information.html">
+          Information on Blue Whales
+        </a>
+      </li>
+      <!-- link to the video page -->
+      <li class="nav-item">
+        <a class="nav-link textColor" href="videos.html">
+          Videos
+        </a>
+      </li>
+      <!-- link to the grames page -->
+      <li class="nav-item">
+        <a class="nav-link textColor" href="games.html">
+          Games
+        </a>
+      </li>
+      <!-- link to the donate page -->
+      <li class="nav-item">
+        <button type="button" class="btn btn-warning btn-sm">
+          <a class="nav-link textColor" id="donate" href="donate.html">
+            Donate to save Blue Wahles
+          </a>
+        </button>
+      </li>
+    </ul>
+  </nav>
+  <br>
 
-    <button class="wrong1" onclick="wrongFunction1()">
-      16m
-    </button>
+  <div class="container">
+    <!-- displays the header of the website -->
+    <div class="row">
+      <div class="col-8">
+        <h1 class="display-1 textColor">
+          Blue Whales Questionnaire
+        </h1>
+      </div>
+    </div>
 
-    <button class="wrong1" onclick="wrongFunction1()">
-      27m
-    </button>
+    <div class="row">
+      <!-- displays the first questipn -->
+      <div class="col textColor">
+        <p>
+          What is the average length of a blue whale?
+        </p>
+        <button class="wrong11" onclick="wrongFunction11()">
+          16m
+        </button>
+        <button class="wrong12" onclick="wrongFunction12()">
+          27m
+        </button>
+        <button class="correct1" onclick="correctFunction1()">
+          30m
+        </button>
+        <button class="wrong13" onclick="wrongFunction13()">
+          50m
+        </button>
+      </div>
 
-    <button class="correct1" onclick="correctFunction1()">
-      30m
-    </button>
+      <!-- displyas the second question -->
+      <div class="col textColor">
+        <p>
+          What is the average weight of a blue whale?
+        </p>
+        <button class="wrong21" onclick="wrongFunction21()">
+          97 tons
+        </button>
+        <button class="wrong22" onclick="wrongFunction22()">
+          130 tons
+        </button>
+        <button class="wrong23" onclick="wrongFunction23()">
+          156 tons
+        </button>
+        <button class="correct2" onclick="correctFunction2()">
+          173 tons
+        </button>
+      </div>
 
-    <button class="wrong1" onclick="wrongFunction1()">
-      50m
-    </button>
+      <!-- displyas the third question -->
+      <div class="col textColor">
+        <p>
+          What is the species of whale that has the longest average length?
+        </p>
+        <button class="wrong31" onclick="wrongFunction31()">
+          Humpback Whale
+        </button>
+        <button class="wrong32" onclick="wrongFunction32()">
+          Sperm Whale
+        </button>
+        <button class="wrong33" onclick="wrongFunction33()">
+          Fin Whale
+        </button>
+        <button class="correct3" onclick="correctFunction3()">
+          Blue Whale
+        </button>
+      </div>
+      <!-- displyas the fourth question -->
+      <div class="col textColor">
+        <p>
+          What do blue whales mainly eat?
+        </p>
+        <button class="wrong41" onclick="wrongFunction41()">
+          Fish
+        </button>
+        <button class="correct4" onclick="correctFunction4()">
+          Krill
+        </button>
+        <button class="wrong42" onclick="wrongFunction42()">
+          Other Whales
+        </button>
+        <button class="wrong43" onclick="wrongFunction43()">
+          Sharks
+        </button>
+      </div>
+      <!-- if the user clicks the correct question, it turns green, and if not, it turns red -->
+      <script>
+      function correctFunction1()
+        {
+          var x = document.getElementsByClassName("correct1");
+          for (var i = 0; i < x.length; i++)
+            {
+              x[i].style.backgroundColor = "green";
+            }
+        }
+      function wrongFunction11()
+        {
+          var x = document.getElementsByClassName("wrong11");
+          for (var i = 0; i < x.length; i++)
+            {
+              x[i].style.backgroundColor = "red"
+            }
+        }
+      function wrongFunction12()
+        {
+          var x = document.getElementsByClassName("wrong12");
+          for (var i = 0; i < x.length; i++)
+            {
+              x[i].style.backgroundColor = "red"
+            }
+        }
+      function wrongFunction13()
+        {
+          var x = document.getElementsByClassName("wrong13");
+          for (var i = 0; i < x.length; i++)
+            {
+              x[i].style.backgroundColor = "red"
+            }
+        }
+      function correctFunction2()
+        {
+          var x = document.getElementsByClassName("correct2");
+          for (var i = 0; i < x.length; i++)
+            {
+              x[i].style.backgroundColor = "green";
+            }
+        }
+      function wrongFunction21()
+        {
+          var x = document.getElementsByClassName("wrong21");
+          for (var i = 0; i < x.length; i++)
+            {
+              x[i].style.backgroundColor = "red"
+            }
+        }
+      function wrongFunction22()
+        {
+          var x = document.getElementsByClassName("wrong22");
+          for (var i = 0; i < x.length; i++)
+            {
+              x[i].style.backgroundColor = "red"
+            }
+        }
+      function wrongFunction23()
+        {
+          var x = document.getElementsByClassName("wrong23");
+          for (var i = 0; i < x.length; i++)
+            {
+              x[i].style.backgroundColor = "red"
+            }
+        }
+      function correctFunction3()
+        {
+          var x = document.getElementsByClassName("correct3");
+          for (var i = 0; i < x.length; i++)
+            {
+              x[i].style.backgroundColor = "green";
+            }
+        }
+      function wrongFunction31()
+        {
+          var x = document.getElementsByClassName("wrong31");
+          for (var i = 0; i < x.length; i++)
+            {
+              x[i].style.backgroundColor = "red"
+            }
+        }
+      function wrongFunction32()
+        {
+          var x = document.getElementsByClassName("wrong32");
+          for (var i = 0; i < x.length; i++)
+            {
+              x[i].style.backgroundColor = "red"
+            }
+        }
+      function wrongFunction33()
+        {
+          var x = document.getElementsByClassName("wrong33");
+          for (var i = 0; i < x.length; i++)
+            {
+              x[i].style.backgroundColor = "red"
+            }
+        }
+      function correctFunction4()
+        {
+          var x = document.getElementsByClassName("correct4");
+          for (var i = 0; i < x.length; i++)
+            {
+              x[i].style.backgroundColor = "green";
+            }
+        }
+      function wrongFunction41()
+        {
+          var x = document.getElementsByClassName("wrong41");
+          for (var i = 0; i < x.length; i++)
+            {
+              x[i].style.backgroundColor = "red"
+            }
+        }
+      function wrongFunction42()
+        {
+          var x = document.getElementsByClassName("wrong42");
+          for (var i = 0; i < x.length; i++)
+            {
+              x[i].style.backgroundColor = "red"
+            }
+        }
+      function wrongFunction43()
+        {
+          var x = document.getElementsByClassName("wrong43");
+          for (var i = 0; i < x.length; i++)
+            {
+              x[i].style.backgroundColor = "red"
+            }
+        }
+      </script>
+    </div>
+
+    <!-- a button if clicked leads the user back to the home page -->
+    <div class="row">
+      <button type="button" class="btn btn-primary">
+        <a class="textColor" href="homePage.html">
+          Back to the Home Page
+        </a>
+      </button>
+    </div>
   </div>
-
-  <!-- displyas the second question -->
-  <div class="textColor">
-    <p>
-      What is the average weight of a blue whale?
-    </p>
-
-    <button class="wrong2" onclick="wrongFunction2()">
-      97 tons
-    </button>
-
-    <button class="wrong2" onclick="wrongFunction2()">
-      130 tons
-    </button>
-
-    <button class="wrong2" onclick="wrongFunction2()">
-      156 tons
-    </button>
-
-    <button class="correct2" onclick="correctFunction2()">
-      173 tons
-    </button>
-  </div>
-
-  <!-- displyas the third question -->
-  <div class="textColor">
-    <p>
-      What is the species of whale that has the longest average length?
-    </p>
-
-    <button class="wrong3" onclick="wrongFunction3()">
-      Humpback Whale
-    </button>
-
-    <button class="wrong3" onclick="wrongFunction3()">
-      Sperm Whale
-    </button>
-
-    <button class="wrong3" onclick="wrongFunction3()">
-      Fin Whale
-    </button>
-
-    <button class="correct3" onclick="correctFunction3()">
-      Blue Whale
-    </button>
-  </div>
-
-  <!-- displyas the fourth question -->
-  <div class="textColor">
-    <p>
-      What do blue whales mainly eat?
-    </p>
-
-    <button class="wrong4" onclick="wrongFunction4()">
-      Fish
-    </button>
-
-    <button class="correct4" onclick="correctFunction4()">
-      Krill
-    </button>
-
-    <button class="wrong4" onclick="wrongFunction4()">
-      Other Whales
-    </button>
-
-    <button class="wrong4" onclick="wrongFunction4()">
-      Sharks
-    </button>
-  </div>
-
-  <!-- if the user clicks the correct question, it turns green, and if not, it turns red -->
-  <script>
-  function correctFunction1()
-    {
-      var x = document.getElementsByClassName("correct1");
-      for (var i = 0; i < x.length; i++)
-        {
-          x[i].style.backgroundColor = "green";
-        }
-    }
-  function wrongFunction1()
-    {
-      var x = document.getElementsByClassName("wrong1");
-      for (var i = 0; i < x.length; i++)
-        {
-          x[i].style.backgroundColor = "red"
-        }
-    }
-
-  function correctFunction2()
-    {
-      var x = document.getElementsByClassName("correct2");
-      for (var i = 0; i < x.length; i++)
-        {
-          x[i].style.backgroundColor = "green";
-        }
-    }
-  function wrongFunction2()
-    {
-      var x = document.getElementsByClassName("wrong2");
-      for (var i = 0; i < x.length; i++)
-        {
-          x[i].style.backgroundColor = "red"
-        }
-    }
-
-  function correctFunction3()
-    {
-      var x = document.getElementsByClassName("correct3");
-      for (var i = 0; i < x.length; i++)
-        {
-          x[i].style.backgroundColor = "green";
-        }
-    }
-  function wrongFunction3()
-    {
-      var x = document.getElementsByClassName("wrong3");
-      for (var i = 0; i < x.length; i++)
-        {
-          x[i].style.backgroundColor = "red"
-        }
-    }
-
-  function correctFunction4()
-    {
-      var x = document.getElementsByClassName("correct4");
-      for (var i = 0; i < x.length; i++)
-        {
-          x[i].style.backgroundColor = "green";
-        }
-    }
-  function wrongFunction4()
-    {
-      var x = document.getElementsByClassName("wrong4");
-      for (var i = 0; i < x.length; i++)
-        {
-          x[i].style.backgroundColor = "red"
-        }
-    }
-  </script>
 
 </body>
 </html>
